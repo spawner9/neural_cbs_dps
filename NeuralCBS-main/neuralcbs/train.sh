@@ -1,0 +1,16 @@
+python train_ncbs.py \
+                    --num_iters 5 \
+                    --num_epoch 10 \
+                    --lr 1e-3 \
+                    --lefting 20 \
+                    --padding 8 \
+                    --spatial_size 480 \
+                    --batchsize 8 \
+                    --train_num 2000 \
+                    --val_num 100 \
+                    --datapath '/work/helm_data' \
+                    --srcpath '/work/helm_data/u_homo/u_homo.npy' \
+                    --save_path './weights' \
+                    --log_path './training.log' \
+                    --plot_loss \
+                    --save_info
